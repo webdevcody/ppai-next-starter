@@ -10,7 +10,7 @@ import { count, eq } from "drizzle-orm";
 
 export async function getTodo(todoId: string) {
   const todo = await database.query.todos.findFirst({
-    where: (books, { eq }) => eq(books.id, todoId),
+    where: (todos, { eq }) => eq(todos.id, todoId),
   });
 
   return todo;
