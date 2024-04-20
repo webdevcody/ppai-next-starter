@@ -9,12 +9,6 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-8 container mx-auto">
       <h1 className="text-4xl flex flex-col gap-4">
-        <Image
-          src="/project-planner-ai-logo.png"
-          width={150}
-          height={150}
-          alt="Project Planner AI Logo"
-        />
         The Project Planner AI Starter Kit
       </h1>
 
