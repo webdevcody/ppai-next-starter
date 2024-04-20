@@ -17,6 +17,7 @@ import { BookIcon, LogOut, Settings2Icon } from "lucide-react";
 import { getSSRSession } from "@/lib/get-server-session";
 import { ModeToggle } from "../mode-toggle";
 import FeedbackButton from "./feedback";
+import { Links } from "./links";
 
 export async function Header() {
   const { user } = await getSSRSession();
@@ -30,28 +31,16 @@ export async function Header() {
             TODO Starter
           </Link>
 
-          <div>
-            <Button variant={"link"} asChild>
-              <Link href="/#features">Features</Link>
-            </Button>
-
-            <Button variant={"link"} asChild>
-              <Link href="/#pricing">Pricing</Link>
-            </Button>
-
-            <Button variant={"link"} asChild>
-              <Link href="/changelog">Changelog</Link>
-            </Button>
-          </div>
+          <Links />
         </div>
 
-        <SignedIn>
-          <Button variant={"secondary"} asChild>
-            <Link href="/todos">Manage Todos</Link>
-          </Button>
-        </SignedIn>
-
         <div className="flex justify-between gap-4">
+          <SignedIn>
+            <Button variant={"secondary"} asChild>
+              <Link href="/todos">Manage Todos</Link>
+            </Button>
+          </SignedIn>
+
           <Unsubscribed>
             <UpgradeButton />
           </Unsubscribed>
@@ -76,7 +65,7 @@ export async function Header() {
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
-                    href="/api/auth/signout"
+                    href="/api/auth/signout?callbackUrl=/"
                     className="flex gap-2 items-center"
                   >
                     <LogOut className="w-4 h-4" /> Sign Out

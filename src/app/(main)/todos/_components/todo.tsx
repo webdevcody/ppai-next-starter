@@ -7,6 +7,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { deleteTodoAction, setTodoCompleteStatusAction } from "./actions";
 import { LoaderButton } from "@/components/loader-button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { trackEvent } from "@/lib/events";
 
 function TodoCheckbox({ todo }: { todo: Todo }) {
   const [pending, startTransition] = useTransition();
@@ -16,6 +17,7 @@ function TodoCheckbox({ todo }: { todo: Todo }) {
       checked={todo.isCompleted}
       id={todo.id}
       onCheckedChange={(checked) => {
+        trackEvent("user toggled todo");
         startTransition(() => {
           setTodoCompleteStatusAction(todo.id, checked as boolean);
         });
@@ -46,6 +48,7 @@ export function Todo({ todo }: { todo: Todo }) {
         isLoading={pending}
         size="icon"
         onClick={() => {
+          trackEvent("user deleted todo");
           startTransition(() => {
             deleteTodoAction(todo.id)
               .then(() => {

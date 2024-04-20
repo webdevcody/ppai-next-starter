@@ -15,6 +15,8 @@ export const env = createEnv({
   },
   client: {
     NEXT_PUBLIC_STRIPE_KEY: z.string().min(1),
+    NEXT_PUBLIC_PROJECT_PLANNER_ID: z.string().min(1),
+    NEXT_PUBLIC_SKIP_EVENTS: z.string().optional(),
   },
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
@@ -27,5 +29,7 @@ export const env = createEnv({
     PRICE_ID: process.env.PRICE_ID,
     NEXT_PUBLIC_STRIPE_KEY: process.env.NEXT_PUBLIC_STRIPE_KEY,
     HOSTNAME: process.env.HOSTNAME,
+    NEXT_PUBLIC_PROJECT_PLANNER_ID: process.env.NEXT_PUBLIC_PROJECT_PLANNER_ID,
+    NEXT_PUBLIC_SKIP_EVENTS: process.env.NEXT_PUBLIC_SKIP_EVENTS,
   },
 });

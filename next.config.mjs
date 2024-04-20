@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: "/changelog",
-        destination: `https://projectplannerai.com/changelog/${process.env.NEXT_PUBLIC_PROJECT_PLANNER_VERSION}`,
+        destination: `https://projectplannerai.com/changelog/${process.env.NEXT_PUBLIC_PROJECT_PLANNER_ID}`,
       },
     ];
   },

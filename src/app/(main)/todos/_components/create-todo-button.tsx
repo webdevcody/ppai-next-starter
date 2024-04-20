@@ -26,6 +26,7 @@ import {
 import { LoaderButton } from "@/components/loader-button";
 import { todoSchema } from "./validation";
 import { useToast } from "@/components/ui/use-toast";
+import { trackEvent } from "@/lib/events";
 
 export function CreateTodoButton() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +41,7 @@ export function CreateTodoButton() {
   });
 
   function onSubmit(values: z.infer<typeof todoSchema>) {
+    trackEvent("user created todo");
     startTransition(() => {
       createTodoAction(values)
         .then(() => {

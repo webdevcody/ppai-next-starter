@@ -5,10 +5,17 @@ import { generateStripeSessionAction } from "./actions";
 import { useFormStatus } from "react-dom";
 import { Loader2Icon } from "lucide-react";
 import { ReactNode } from "react";
+import { trackEvent } from "@/lib/events";
 
 export function UpgradeButton() {
   return (
-    <form action={generateStripeSessionAction}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        trackEvent("user clicked upgrade button");
+        generateStripeSessionAction();
+      }}
+    >
       <LoaderButton>Upgrade</LoaderButton>
     </form>
   );

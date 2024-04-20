@@ -8,6 +8,7 @@ import { Providers } from "@/app/_components/providers";
 import { Header } from "@/app/_components/header/header";
 import { ReactNode } from "react";
 import { Footer } from "@/app/_components/footer";
+import { SendEventOnLoad } from "@/components/send-event-on-load";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <SendEventOnLoad eventKey="user viewed app" />
         <Providers>
           <Toaster />
           <NextTopLoader />
