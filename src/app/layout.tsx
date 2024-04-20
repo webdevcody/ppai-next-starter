@@ -1,0 +1,47 @@
+import "@/app/globals.css";
+import type { Metadata } from "next";
+import NextTopLoader from "nextjs-toploader";
+import { Toaster } from "@/components/ui/toaster";
+import { Inter as FontSans } from "next/font/google";
+import { cn } from "@/lib/utils";
+import { Providers } from "@/app/_components/providers";
+import { Header } from "@/app/_components/header/header";
+import { ReactNode } from "react";
+import { Footer } from "@/app/_components/footer";
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+export const metadata: Metadata = {
+  title: "WriteBook",
+  description: "The Project Planner AI Next Starter Kit",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}
+      >
+        <Providers>
+          <Toaster />
+          <NextTopLoader />
+          <div className="flex flex-col gap-12 w-full">
+            <Header />
+            <div className="container mx-auto min-h-screen">{children}</div>
+            <Footer />
+          </div>
+        </Providers>
+      </body>
+    </html>
+  );
+}

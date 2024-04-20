@@ -1,0 +1,31 @@
+import { createEnv } from "@t3-oss/env-nextjs";
+import { z } from "zod";
+
+export const env = createEnv({
+  server: {
+    DATABASE_URL: z.string().url(),
+    NODE_ENV: z.string().optional(),
+    GOOGLE_ID: z.string().min(1),
+    GOOGLE_SECRET: z.string().min(1),
+    NEXTAUTH_SECRET: z.string().min(1),
+    STRIPE_API_KEY: z.string().min(1),
+    STRIPE_WEBHOOK_SECRET: z.string().min(1),
+    PRICE_ID: z.string().min(1),
+    HOSTNAME: z.string().min(1),
+  },
+  client: {
+    NEXT_PUBLIC_STRIPE_KEY: z.string().min(1),
+  },
+  runtimeEnv: {
+    NODE_ENV: process.env.NODE_ENV,
+    DATABASE_URL: process.env.DATABASE_URL,
+    GOOGLE_ID: process.env.GOOGLE_ID,
+    GOOGLE_SECRET: process.env.GOOGLE_SECRET,
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+    STRIPE_API_KEY: process.env.STRIPE_API_KEY,
+    STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET,
+    PRICE_ID: process.env.PRICE_ID,
+    NEXT_PUBLIC_STRIPE_KEY: process.env.NEXT_PUBLIC_STRIPE_KEY,
+    HOSTNAME: process.env.HOSTNAME,
+  },
+});

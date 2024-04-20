@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  ppai-starter:
+    image: postgres
+    restart: always
+    container_name: ppai-starter
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: example
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+
+volumes:
+  postgres:
