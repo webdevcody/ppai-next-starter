@@ -13,10 +13,9 @@ import { SignedIn } from "@/components/auth/signed-in";
 import { SignedOut } from "@/components/auth/signed-out";
 import { UpgradeButton } from "@/components/stripe/upgrade-button/upgrade-button";
 import { Unsubscribed } from "@/components/auth/subscription-status";
-import { BookIcon, LogOut, MessageCircleHeart } from "lucide-react";
+import { BookIcon, LogOut, Settings2Icon } from "lucide-react";
 import { getSSRSession } from "@/lib/get-server-session";
 import { ModeToggle } from "../mode-toggle";
-import Feedback from "./feedback";
 import FeedbackButton from "./feedback";
 
 export async function Header() {
@@ -70,6 +69,11 @@ export async function Header() {
                 </Avatar>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
+                <DropdownMenuItem>
+                  <Link href="/settings" className="flex gap-2 items-center">
+                    <Settings2Icon className="w-4 h-4" /> Settings
+                  </Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
                     href="/api/auth/signout"

@@ -15,7 +15,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "WriteBook",
+  title: "Starter Kit",
   description: "The Project Planner AI Next Starter Kit",
 };
 

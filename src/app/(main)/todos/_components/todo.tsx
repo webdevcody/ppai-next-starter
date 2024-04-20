@@ -29,7 +29,10 @@ export function Todo({ todo }: { todo: Todo }) {
   const [pending, startTransition] = useTransition();
 
   return (
-    <div key={todo.id} className="flex gap-8 items-center">
+    <div
+      key={todo.id}
+      className="flex gap-8 items-center border-b py-4 last:border-b-0"
+    >
       <TodoCheckbox todo={todo} />
 
       <label

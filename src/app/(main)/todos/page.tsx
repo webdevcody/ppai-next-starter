@@ -21,7 +21,7 @@ export default async function TodosPage() {
   const hasTodos = todos.length > 0;
 
   return (
-    <div>
+    <div className="max-w-2xl mx-auto w-full">
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-4xl">Your Todos</h1>
         <CreateTodoButton />
