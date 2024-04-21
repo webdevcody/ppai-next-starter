@@ -1,6 +1,6 @@
-# Welcome
+# Welcome to the Project Planner AI Next Starter Kit
 
-Welcome to the Project Planner AI Next Starter Kit! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product:
+Welcome to the [Project Planner AI](https://projectplannerai.com) Next Starter Kit! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product:
 
 - Authentication (Next-Auth)
 - Authorization
@@ -15,6 +15,8 @@ Welcome to the Project Planner AI Next Starter Kit! This is a github template wh
 - Changelog
 - Analytics
 - Feedback
+
+We kept this project pretty simple but with enough functionality to allow you to start adding on new features as needed.
 
 ## How to Get Started
 
