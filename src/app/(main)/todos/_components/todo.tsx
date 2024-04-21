@@ -33,20 +33,21 @@ export function Todo({ todo }: { todo: Todo }) {
   return (
     <div
       key={todo.id}
-      className="flex gap-8 items-center border-b py-4 last:border-b-0"
+      className="bg-gray-200 dark:bg-gray-800 w-full py-4 px-4 rounded flex items-center gap-4"
     >
-      <TodoCheckbox todo={todo} />
+      <div className="flex items-center gap-4 flex-grow">
+        <TodoCheckbox todo={todo} />
 
-      <label
-        htmlFor={todo.id}
-        className="text-2xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-      >
-        {todo.text}
-      </label>
+        <label
+          htmlFor={todo.id}
+          className="text-2xl font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        >
+          {todo.text}
+        </label>
+      </div>
 
       <LoaderButton
         isLoading={pending}
-        size="icon"
         onClick={() => {
           trackEvent("user deleted todo");
           startTransition(() => {

@@ -6,8 +6,9 @@ import { useFormStatus } from "react-dom";
 import { Loader2Icon } from "lucide-react";
 import { ReactNode } from "react";
 import { trackEvent } from "@/lib/events";
+import { cn } from "@/lib/utils";
 
-export function UpgradeButton() {
+export function UpgradeButton({ className }: { className?: string }) {
   return (
     <form
       onSubmit={(e) => {
@@ -16,19 +17,25 @@ export function UpgradeButton() {
         generateStripeSessionAction();
       }}
     >
-      <LoaderButton>Upgrade</LoaderButton>
+      <LoaderButton className={className}>Upgrade</LoaderButton>
     </form>
   );
 }
 
-function LoaderButton({ children }: { children: ReactNode }) {
+function LoaderButton({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   const { pending } = useFormStatus();
 
   return (
     <Button
       disabled={pending}
       type="submit"
-      className="flex gap-2 justify-center"
+      className={cn("flex gap-2 justify-center", className)}
     >
       {pending && <Loader2Icon className="animate-spin w-4 h-4" />} {children}
     </Button>

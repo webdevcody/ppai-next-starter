@@ -10,6 +10,7 @@ import {
   boolean,
   uuid,
   unique,
+  time,
 } from "drizzle-orm/pg-core";
 import type { AdapterAccount } from "@auth/core/adapters";
 import { sql } from "drizzle-orm";
@@ -81,6 +82,9 @@ export const todos = pgTable("todo", {
     .references(() => users.id, { onDelete: "cascade" }),
   text: varchar("text").notNull(),
   isCompleted: boolean("isCompleted").notNull().default(false),
+  createdAt: time("createdAt")
+    .notNull()
+    .default(sql`now()`),
 });
 
 export const subscriptions = pgTable("subscriptions", {

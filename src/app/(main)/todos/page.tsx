@@ -27,10 +27,10 @@ export default async function TodosPage() {
         <CreateTodoButton />
       </div>
 
-      <hr className="border-b" />
+      <hr className="border-b my-4" />
 
       {hasTodos && (
-        <div className="">
+        <div className="flex flex-col gap-4">
           {todos.map((todo) => (
             <Todo todo={todo} key={todo.id} />
           ))}

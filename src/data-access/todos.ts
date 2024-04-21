@@ -19,12 +19,13 @@ export async function getTodo(todoId: string) {
 export async function getTodos(userId: string) {
   const todos = await database.query.todos.findMany({
     where: (todos, { eq }) => eq(todos.userId, userId),
+    orderBy: (todos, { asc }) => [asc(todos.createdAt)],
   });
 
   return todos;
 }
 
-export async function createTodo(newTodo: Omit<Todo, "id">) {
+export async function createTodo(newTodo: Omit<Todo, "id" | "createdAt">) {
   const [todo] = await database.insert(todos).values(newTodo).returning();
   return todo;
 }
