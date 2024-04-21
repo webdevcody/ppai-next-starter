@@ -13,7 +13,7 @@ import { SignedIn } from "@/components/auth/signed-in";
 import { SignedOut } from "@/components/auth/signed-out";
 import { UpgradeButton } from "@/components/stripe/upgrade-button/upgrade-button";
 import { Unsubscribed } from "@/components/auth/subscription-status";
-import { BookIcon, LogOut, Settings2Icon } from "lucide-react";
+import { LogOut, Settings2Icon } from "lucide-react";
 import { getSSRSession } from "@/lib/get-server-session";
 import { ModeToggle } from "../mode-toggle";
 import FeedbackButton from "./feedback";

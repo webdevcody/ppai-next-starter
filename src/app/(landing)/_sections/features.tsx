@@ -1,6 +1,9 @@
 export function FeaturesSection() {
   return (
-    <section id="features" className="container mx-auto py-24">
+    <section
+      id="features"
+      className="container mx-auto py-24 bg-gray-100 dark:bg-background"
+    >
       <p className="text-4xl text-center mb-12">
         Including all of the modern libraries you&apos;d need
       </p>

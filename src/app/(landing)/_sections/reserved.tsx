@@ -2,8 +2,7 @@ import Image from "next/image";
 
 export function RightsReserved() {
   return (
-    <div className="pb-8">
-      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div className="py-8 pb-8 bg-white dark:bg-gray-900">
       <div className="text-center">
         <a
           href="#"
