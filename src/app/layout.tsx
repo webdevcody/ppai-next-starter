@@ -9,6 +9,7 @@ import { Header } from "@/app/_components/header/header";
 import { ReactNode } from "react";
 import { Footer } from "@/app/_components/footer";
 import { SendEventOnLoad } from "@/components/send-event-on-load";
+import { RightsReserved } from "./(landing)/_sections/reserved";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -37,10 +38,11 @@ export default function RootLayout({
         <Providers>
           <Toaster />
           <NextTopLoader />
-          <div className="flex flex-col gap-12 w-full">
+          <div className="flex flex-col w-full">
             <Header />
-            <div className="container mx-auto min-h-screen">{children}</div>
+            <div className="">{children}</div>
             <Footer />
+            <RightsReserved />
           </div>
         </Providers>
       </body>

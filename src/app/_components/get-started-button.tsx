@@ -12,7 +12,7 @@ export function GetStartedButton() {
         signIn("google", { callbackUrl: "/todos" });
       }}
     >
-      Get Started
+      Login to Get Started
     </Button>
   );
 }

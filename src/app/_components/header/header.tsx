@@ -18,6 +18,7 @@ import { getSSRSession } from "@/lib/get-server-session";
 import { ModeToggle } from "../mode-toggle";
 import FeedbackButton from "./feedback";
 import { Links } from "./links";
+import Image from "next/image";
 
 export async function Header() {
   const { user } = await getSSRSession();
@@ -27,7 +28,13 @@ export async function Header() {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex gap-8 items-center">
           <Link href="/" className="flex gap-1 items-center text-xl">
-            <BookIcon />
+            <Image
+              className="rounded w-8 h-8"
+              width="50"
+              height="50"
+              src="/computer.jpeg"
+              alt="hero image"
+            />
             TODO Starter
           </Link>
 

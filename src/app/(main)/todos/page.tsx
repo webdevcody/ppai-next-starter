@@ -21,11 +21,13 @@ export default async function TodosPage() {
   const hasTodos = todos.length > 0;
 
   return (
-    <div className="max-w-2xl mx-auto w-full">
+    <div className="max-w-2xl mx-auto w-full py-24 min-h-screen">
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-4xl">Your Todos</h1>
         <CreateTodoButton />
       </div>
+
+      <hr className="border-b" />
 
       {hasTodos && (
         <div className="">
@@ -36,7 +38,7 @@ export default async function TodosPage() {
       )}
 
       {!hasTodos && (
-        <div className="text-2xl flex items-center justify-center">
+        <div className="mt-24 text-2xl flex items-center justify-center">
           <p>You have no todos</p>
         </div>
       )}

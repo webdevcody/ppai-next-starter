@@ -1,34 +1,71 @@
-import Link from "next/link";
-
 export function Footer() {
   return (
-    <footer className="border-t py-8">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          <div className="flex flex-col gap-4">
-            <Link className="text-xl" href="/">
-              TodoStarter
-            </Link>
-            <span>Copyright @ 2024 YOUR APP NAME.</span>
-          </div>
-
+    <footer className="border-t">
+      <div className="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-3">
           <div>
-            <h2 className="text-2xl">About</h2>
-            <ul className="mt-4">
-              <li>
-                <a href="#">Contact Us</a>
+            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Company
+            </h3>
+            <ul className="text-gray-500 dark:text-gray-400">
+              <li className="mb-4">
+                <a href="#" className=" hover:underline">
+                  About
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Blog
+                </a>
               </li>
             </ul>
           </div>
-
           <div>
-            <h2 className="text-2xl">Legal</h2>
-            <ul className="mt-4">
-              <li>
-                <a href="#">Privacy Policy</a>
+            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Help center
+            </h3>
+            <ul className="text-gray-500 dark:text-gray-400">
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Discord Server
+                </a>
               </li>
-              <li>
-                <a href="#">Terms of Service</a>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Twitter
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Facebook
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Legal
+            </h3>
+            <ul className="text-gray-500 dark:text-gray-400">
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Privacy Policy
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Licensing
+                </a>
+              </li>
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Terms
+                </a>
               </li>
             </ul>
           </div>
