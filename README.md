@@ -133,7 +133,7 @@ By default, this starter only comes with the google provider which you'll need t
 
 7. Set your google id and secret inside of .env
 
-- _GOOGLE_ID_
-- **GOOGLE_SECRET**
+- **GOOGLE_CLIENT_ID**
+- **GOOGLE_CLIENT_SECRET**
 
 8. run `openssl rand -base64 32` and set **NEXTAUTH_SECRET** (this is used for signing the jwt)
