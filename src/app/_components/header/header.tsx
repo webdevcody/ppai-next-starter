@@ -35,7 +35,7 @@ export async function Header() {
               src="/computer.jpeg"
               alt="hero image"
             />
-            TODOStarter
+            <span className="font-bold">StarterKit</span>
           </Link>
 
           <Links />

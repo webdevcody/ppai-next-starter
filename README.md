@@ -1,4 +1,4 @@
-# Welcome to the ProjectPlannerAI Next Starter Kit
+# ProjectPlannerAI Starter Kit
 
 Welcome to the [ProjectPlannerAI](https://projectplannerai.com) Next Starter Kit! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product:
 
