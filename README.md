@@ -2,7 +2,7 @@
 
 Welcome to the [ProjectPlannerAI](https://projectplannerai.com) StarterKit boilerplate! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product.
 
-Built with the Next.js 14 App Router, TypeScript, Stripe, Shadcn & Tailwind CSS.
+Built with the Next.js 14 App Router, TypeScript, Drizzle ORM, Stripe, Shadcn & Tailwind CSS.
 
 ![demo](https://github.com/webdevcody/ppai-next-starter/assets/39573679/46f68cfd-5f85-4150-ace6-5a140ac5a3a5)
 
