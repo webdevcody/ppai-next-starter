@@ -1,6 +1,6 @@
-# Welcome to the Project Planner AI Next Starter Kit
+# Welcome to the ProjectPlannerAI Next Starter Kit
 
-Welcome to the [Project Planner AI](https://projectplannerai.com) Next Starter Kit! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product:
+Welcome to the [ProjectPlannerAI](https://projectplannerai.com) Next Starter Kit! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product:
 
 - Authentication (Next-Auth)
 - Authorization
@@ -20,7 +20,7 @@ We kept this project pretty simple but with enough functionality to allow you to
 
 ## Contributing
 
-If you find obvious issues with this starter kit, feel free to submit a pull request or submit and issue. We want to keep this starter simple with the core technology picked, so we don't recommend trying to add in various things without prior approval.
+If you find obvious issues with this starter kit, feel free to submit a pull request or submit an issue. We want to keep this starter simple with the core technology picked, so we don't recommend trying to add in various things without prior approval.
 
 ## How to Get Started
 
@@ -28,7 +28,7 @@ Start by clicking the "use this template" button on the github repo. We suggest 
 
 ### Prerequisites
 
-This starter kit does uses Docker and Docker Compose to run a postgres database, so you will need to either have those installed, or modify the project to point to a hosted database solution.
+This starter kit uses Docker and Docker Compose to run a postgres database, so you will need to either have those installed, or modify the project to point to a hosted database solution.
 
 ## How to Run
 
@@ -40,7 +40,7 @@ This starter kit does uses Docker and Docker Compose to run a postgres database,
 
 ## Env Setup
 
-This starter kit depends on a few external services, such as **google oauth**, **stripe**, etc. You'll need to following the steps below and make sure everything is setup and copy the necesssary values into your .env file:
+This starter kit depends on a few external services, such as **google oauth**, **stripe**, etc. You'll need to following the steps below and make sure everything is setup and copy the necessary values into your .env file:
 
 ### Database
 
@@ -70,7 +70,7 @@ Depending on if you are developing locally or deploying to prod, there are two p
 
 ##### Local Development
 
-We provided an npm alias `stripe:listen` you can run if you want to setup your locally running application to listsen for any stripe events. Run this command and copy the webhook secret it prints to the console into your .env file.
+We provided an npm alias `stripe:listen` you can run if you want to setup your locally running application to listen for any stripe events. Run this command and copy the webhook secret it prints to the console into your .env file.
 
 ##### Production
 
