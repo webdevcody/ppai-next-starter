@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="border-t bg-gray-100 dark:bg-background">
@@ -53,19 +55,14 @@ export function Footer() {
             </h3>
             <ul className="text-gray-500 dark:text-gray-400">
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <Link href="/privacy" className="hover:underline">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Licensing
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Terms
-                </a>
+                <Link href="/terms-of-service" className="hover:underline">
+                  Terms of Service
+                </Link>
               </li>
             </ul>
           </div>

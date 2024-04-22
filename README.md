@@ -28,7 +28,7 @@ Start by clicking the "use this template" button on the github repo. We suggest 
 
 ### Prerequisites
 
-This starter kit does uses Docker and Docker Desktop to run a postgres database, so you will need to either have those installed, or modify the project to point to a hosted database solution.
+This starter kit does uses Docker and Docker Compose to run a postgres database, so you will need to either have those installed, or modify the project to point to a hosted database solution.
 
 ## How to Run
 
