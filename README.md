@@ -18,6 +18,10 @@ Welcome to the [Project Planner AI](https://projectplannerai.com) Next Starter K
 
 We kept this project pretty simple but with enough functionality to allow you to start adding on new features as needed.
 
+## Contributing
+
+If you find obvious issues with this starter kit, feel free to submit a pull request or submit and issue. We want to keep this starter simple with the core technology picked, so we don't recommend trying to add in various things without prior approval.
+
 ## How to Get Started
 
 Start by clicking the "use this template" button on the github repo. We suggest creating a new repository so you can track your code changes. After, clone your own repository down to your computer and start working on it.
