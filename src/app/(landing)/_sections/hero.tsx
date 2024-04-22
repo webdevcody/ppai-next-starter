@@ -16,8 +16,8 @@ export function HeroSection() {
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               This <strong className="font-bold">free</strong> and{" "}
-              <strong className="font-bold">open-source</strong>
-              starter kit we created for you to acheive your next{" "}
+              <strong className="font-bold">open-source</strong> starter kit we
+              created for you to acheive your next{" "}
               <strong className="font-bold">SaaS projects</strong> with ease.
             </p>
             <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
