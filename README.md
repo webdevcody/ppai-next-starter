@@ -1,12 +1,13 @@
-# ProjectPlannerAI Starter Kit
+# ProjectPlannerAI StarterKit - A boilerplate for building SaaS products
 
-Welcome to the [ProjectPlannerAI](https://projectplannerai.com) Next Starter Kit! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product.
+Welcome to the [ProjectPlannerAI](https://projectplannerai.com) StarterKit boilerplate! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product.
 
+Built with the Next.js 14 App Router, TypeScript, Stripe, Shadcn & Tailwind CSS.
 
 ![demo](https://github.com/webdevcody/ppai-next-starter/assets/39573679/46f68cfd-5f85-4150-ace6-5a140ac5a3a5)
 
-
 ## Features
+
 - 🔒 Authentication (Next-Auth)
 - 🚨 Authorization
 - 💳 Subscription Management (Stripe)
@@ -139,4 +140,5 @@ By default, this starter only comes with the google provider which you'll need t
 8. run `openssl rand -base64 32` and set **NEXTAUTH_SECRET** (this is used for signing the jwt)
 
 ## Contributions
+
 Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug. We want to keep this starter simple with the core technology picked, so we don't recommend trying to add in various things without prior approval.
