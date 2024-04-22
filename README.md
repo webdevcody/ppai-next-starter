@@ -1,30 +1,30 @@
 # ProjectPlannerAI Starter Kit
 
-Welcome to the [ProjectPlannerAI](https://projectplannerai.com) Next Starter Kit! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product:
+Welcome to the [ProjectPlannerAI](https://projectplannerai.com) Next Starter Kit! This is a github template which contains the following technology we feel is a great starting point for any new SaaS product.
 
-- Authentication (Next-Auth)
-- Authorization
-- Subscription Management (Stripe)
-- Stripe Integration / Webhooks
-- Todo Management
-- Drizzle ORM
-- Light / Dark Mode
-- ShadCN
-- Tailwind CSS
-- Account Management
-- Changelog
-- Analytics
-- Feedback
+
+![demo](https://github.com/webdevcody/ppai-next-starter/assets/39573679/46f68cfd-5f85-4150-ace6-5a140ac5a3a5)
+
+
+## Features
+- 🔒 Authentication (Next-Auth)
+- 🚨 Authorization
+- 💳 Subscription Management (Stripe)
+- 💵 Stripe Integration / Webhooks
+- 🗂️ Todo Management
+- 🌧️ Drizzle ORM
+- 😎 Light / Dark Mode
+- 🌟 Tailwind CSS & ShadCN
+- ✅ Account Management
+- 🔁 Changelog
+- 📈 Analytics
+- 💬 Feedback
 
 We kept this project pretty simple but with enough functionality to allow you to start adding on new features as needed.
 
-## Contributing
+## Getting started
 
-If you find obvious issues with this starter kit, feel free to submit a pull request or submit an issue. We want to keep this starter simple with the core technology picked, so we don't recommend trying to add in various things without prior approval.
-
-## How to Get Started
-
-Start by clicking the "use this template" button on the github repo. We suggest creating a new repository so you can track your code changes. After, clone your own repository down to your computer and start working on it.
+Start by clicking the "Use this template" button on the github repo. We suggest creating a new repository so you can track your code changes. After, clone your own repository down to your computer and start working on it.
 
 ### Prerequisites
 
@@ -137,3 +137,6 @@ By default, this starter only comes with the google provider which you'll need t
 - **GOOGLE_CLIENT_SECRET**
 
 8. run `openssl rand -base64 32` and set **NEXTAUTH_SECRET** (this is used for signing the jwt)
+
+## Contributions
+Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug. We want to keep this starter simple with the core technology picked, so we don't recommend trying to add in various things without prior approval.
