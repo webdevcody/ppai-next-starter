@@ -4,7 +4,7 @@ import { DeleteAccountButton } from "./_components/delete-account-button";
 
 export default function SettingsPage() {
   return (
-    <div>
+    <div className="container mx-auto py-12">
       <h1 className="text-4xl mb-8">Account Settings</h1>
 
       <section className="space-y-6">
@@ -31,7 +31,7 @@ export default function SettingsPage() {
           </div>
         </div>
 
-        <div className="bg-white dark:border-red-500 dark:bg-transparent rounded-md border">
+        <div className="bg-white border-red-500 dark:bg-transparent rounded-md border">
           <div className="border-b px-4 py-2 sm:px-6 md:py-3 dark:bg-neutral-900/50 bg-neutral-50 rounded-t-md">
             <span className="text-base sm:text-lg font-medium mb-4">
               Danger Zone

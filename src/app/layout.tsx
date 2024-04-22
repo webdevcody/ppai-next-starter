@@ -40,7 +40,7 @@ export default function RootLayout({
           <NextTopLoader />
           <div className="flex flex-col w-full">
             <Header />
-            <div className="">{children}</div>
+            <div>{children}</div>
             <Footer />
             <RightsReserved />
           </div>
